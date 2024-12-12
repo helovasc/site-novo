@@ -1,0 +1,194 @@
+#scroll-animate {
+    overflow: hidden;
+  }
+  
+  #scroll-animate-main {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+  
+  #heightPage,
+  #heightScroll {
+    top: 0;
+    position: absolute;
+    z-index: 99;
+  }
+  
+  #heightPage {
+    left: 0;
+  }
+  
+  #heightScroll {
+    right: 0;
+  }
+  
+  header {
+    width: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  header h1{
+    width: 50%;
+    height: 50%;
+  }
+  
+  footer {
+    width: 100%;
+    height: fit-content;
+    background: gray;
+    position: relative; /* Coloca o footer no fluxo normal */
+    z-index: 1;
+    margin-top: auto; /* Empurra o footer para o final da página */
+  }
+
+  footer p{
+    padding: 5px 50px;
+    margin: 0 auto;
+    max-width: 100%; /* Limita a largura máxima do parágrafo */
+    text-align: center;
+    line-height: 10px;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: black;
+  }
+  
+  body {
+    display: flex;
+    background: url(https://images.pexels.com/photos/29709053/pexels-photo-29709053/free-photo-of-bando-de-passaros-em-voo-contra-ceu-nublado.jpeg) 50% 50%;
+    background-position: 30%;
+    flex-direction: column; /* Garante que o conteúdo principal e o footer fiquem alinhados verticalmente */
+    min-height: 0; /* A altura mínima do body será igual à altura total da janela */
+    margin: 0; /* Remove margens padrão */
+  }
+  
+  .content {
+    height: fit-content;
+    max-width: 100%; /* Limita a largura máxima do conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    min-height: fit-content;
+    background: #ededed;
+    padding: 40px 30px;
+    text-align: left;
+    position: relative;
+    z-index: -1;
+  }
+  
+  .texto {
+    height: fit-content;
+    max-width: 100%; /* Limita a largura máxima do texto */
+    margin: 0 auto; /* Centraliza o texto */
+    min-height: fit-content;
+    background: #ededed;
+    padding: 50px 30px;
+    text-align: left;
+    position: relative;
+    z-index: -1;
+    flex: 1; /* Permite que o conteúdo principal preencha o espaço disponível */
+  }
+  
+  .wrapper-parallax {
+    margin-top: 100%;
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    width: 100%;
+    height: auto;
+    padding: 50px 0; /* Ajuste para espaçamento interno */
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: grey 0.1em 0.1em 0.2em;
+  }
+  
+  p {
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 800px; /* Limita a largura máxima do parágrafo */
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  h2 {
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 800px; /* Limita a largura máxima do parágrafo */
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 30px;
+    color: black;
+  }
+
+  h4 {
+    padding: 20px 0;
+    margin: 0 auto;
+    max-width: 800px; /* Limita a largura máxima do parágrafo */
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: grey;
+  }
+
+  h3 {
+    padding: 10px 0;
+    margin: 0 auto;
+    max-width: 800px; /* Limita a largura máxima do parágrafo */
+    text-align: left;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: black;
+  }
+  
+  
+  header,
+  footer,
+  #scroll-animate-main {
+    -webkit-transition-property: all;
+       -moz-transition-property: all;
+        transition-property: all;
+  
+    -webkit-transition-duration: 0.4s;
+       -moz-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+  
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+       -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+        transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  }
+  
+  div.flourish-embed {
+    width: 90%; /* Limita a largura do gráfico */
+    max-width: 800px; /* Define uma largura máxima */
+    height: auto; /* Ajusta a altura automaticamente */
+    margin: 20px auto; /* Centraliza os gráficos na página */
+  }
+
+  .sep{
+    width: 80%;
+    height: 2px; /* Define a espessura da linha */
+    background-color: #444444; 
+    margin: auto; /* Adiciona espaçamento acima e abaixo da linha */
+    flex: 1;    
+    z-index: -1
+  }
+
+ .fundo {
+    width: 100%;
+    height: 2px; 
+    background-color:#ededed;    
+    z-index: -2;
+    margin: 0;
+  } 
+  
